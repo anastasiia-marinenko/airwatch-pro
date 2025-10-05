@@ -1,47 +1,4 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "app.js",
-            "use": "@vercel/node"
-        },
-        {
-            "src": "public/**",
-            "use": "@vercel/static"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/api/(.*)",
-            "dest": "app.js"
-        },
-        {
-            "src": "/data/(.*)",
-            "dest": "/data/$1"
-        },
-        {
-            "src": "/public/(.*)",
-            "dest": "/public/$1"
-        },
-        {
-            "src": "/views/(.*)",
-            "dest": "/views/$1"
-        },
-        {
-            "src": "/js/(.*)",
-            "dest": "/public/js/$1"
-        },
-        {
-            "src": "/images/(.*)",
-            "dest": "/public/images/$1"
-        },
-        {
-            "src": "/css/(.*)",
-            "dest": "/public/css/$1"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "app.js"
-        }
-    ]
+  "version": 2,
+  "rootDirectory": "frontend"
 }
